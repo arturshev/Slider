@@ -1,0 +1,75 @@
+*{
+	margin:0;
+	padding:0;  
+}
+.container,.container2{
+	margin-top:100px;
+}
+ul{
+	list-style: none;
+}
+.slider{
+	border: 1px solid grey;
+	margin: auto;
+	width: 833px;
+	height: 240px;
+
+}
+.buttons {
+	float:left;
+	
+}
+.buttons:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	zoom: 1;
+}
+.buttons li{
+	width: 200px;
+	height: 59px;
+	border-bottom: 1px solid grey;
+	position: relative;
+	
+}
+.arrow{
+	display: none;
+}
+.current{
+	background: #FF7000;
+}
+.buttons li:hover{
+	/*background: orange;*/
+	cursor: pointer;
+}
+/*.buttons li:hover .arrow{
+	display: block;
+}*/
+.arrow{
+    position: absolute; /* Абсолютное позиционирование */
+    left: 100%; bottom: 20px; /* Положение треугольника */
+    border: 10px solid transparent;	/* Прозрачные границы */
+    border-left: 10px solid #FF7000;/* Добавляем треугольник */
+}
+.buttons li:last-child{
+	height: 60px;
+	border-bottom:none;
+}
+
+.images{
+	width: 633px;
+	overflow: hidden;
+}
+.images ul{
+	height: 240px;
+	width: 9999px;
+}
+.images ul li{
+	float: left;
+}
+.images ul img{
+	height: 240px;
+	display: block;
+}
